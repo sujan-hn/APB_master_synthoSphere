@@ -16,8 +16,29 @@ RTL implementation and synthesis of the APB Master Protocol using opensource too
 5. **Transfer Phases:**
    - This APB transfer consists of a read phase followed by a write phase.
    - In the read phase, data is read from the peripheral register into `PRDATA`.
-   -  - For simplicity in the design, the `PADDR` signal is kept constant during transfers.
+   - For simplicity in the design, the `PADDR` signal is kept constant during transfers.
    - In the write phase, the data from the read phase is fed into `PWDATA` and a write operation is indicated by asserting `PWRITE`.
+
+
+APB Master Interface:
+
+![APB Master Interface](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/18a5a0c0-13c4-4414-aca2-4785d1d3234a)
+
+
+APB Transfer FSM:
+
+![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/2ffa7739-cff7-4311-99f0-401750878d6d)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
