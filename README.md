@@ -250,12 +250,19 @@ endmodule
 ## GLS Simulation:
 #### The functionality of the APB master bridge is retained post-synthesis. Hence the deisgn does not have Simulation-Synthesis Mismatch
 
+![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/e13a939e-ec1b-4626-8176-b6544b259eda)
+
+
 
 ###### Read_tx
-![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/299913c7-4881-43e5-b422-1f9f57af4876)
+![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/7e066e4c-eace-4893-8837-17e44074b052)
+
+
 
 ###### Write_tx
-![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/3878bc9b-9407-4e70-bfd0-e47fdc57e9a0)
+
+![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/407ecfa7-9126-4abb-912e-620425cd2e43)
+
 
 
 
