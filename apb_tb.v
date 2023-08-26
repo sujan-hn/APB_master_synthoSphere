@@ -67,7 +67,7 @@ module apb_slave_tb ();
   if (~preset_n)
   count<=0;
   else
-  count = count +1;
+  count <= count +1;
   
   end
   
