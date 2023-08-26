@@ -248,7 +248,7 @@ endmodule
 ![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/8c5f793b-3beb-4c01-8a1b-101627b237e9)
 
 ## GLS Simulation:
-#### The functionality of the PWM generator with variable duty cycle is retained post-synthesis. Hence the deisgn does not have Simulation-Synthesis Mismatch
+#### The functionality of the APB master bridge is retained post-synthesis. Hence the deisgn does not have Simulation-Synthesis Mismatch
 
 
 ###### Read_tx
