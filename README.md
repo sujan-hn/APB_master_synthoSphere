@@ -193,7 +193,7 @@ module apb_slave_tb ();
   if (~preset_n)
   count<=0;
   else
-  count = count +1;
+  count <= count +1;
   
   end
   
@@ -224,11 +224,13 @@ endmodule
 
 ## RTL Simulation Results:
 #### READ transfer
-![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/49ae1919-7098-4721-8ab8-c74c516c8f25)
+![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/05781be1-988e-441e-9bc8-725ffce19268)
+
 ##### The PSEL is first asserted then the next pclk cycle the penable is asserted by the Master, when the slave is ready for the read transaction, the slave asserts the pready signal, and then the data is sampled.(Here the sampled data is 05).
 
 #### WRITE transfer
-![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/83d90713-2f76-4758-86fe-41b6f9585eca)
+![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/39f6a91d-f59d-4a34-a27d-fab3e3808321)
+
 ##### The PSEL is first asserted then the next pclk cycle the penable is asserted by the Master, when the slave is ready for the write transaction, the slave asserts the pready signal, and then the PWDATA is changed.(Here, the read data is again fed back to the pwdata bus(value = 05)).
 
 
@@ -255,13 +257,15 @@ endmodule
 
 
 ###### Read_tx
-![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/7e066e4c-eace-4893-8837-17e44074b052)
+![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/1b449815-fc28-4aa7-83d1-39170ef5ca5f)
+
 
 
 
 ###### Write_tx
 
-![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/407ecfa7-9126-4abb-912e-620425cd2e43)
+![image](https://github.com/sujan-hn/APB_master_synthoSphere/assets/129975786/5c4a73d5-bcef-40b7-acef-92bc5c8b4b2d)
+
 
 
 
